@@ -1781,8 +1781,43 @@ img {
   margin-top: 0.5rem;
 }
 
-.contactBanner {
+.topcontactBanner {
+  height: 700px;
   padding: 4rem 0;
+}
+.topcontactBanner__wrapper {
+  margin: 0 auto;
+  align-items: center;
+}
+@media screen and (max-width: 520px) {
+  .topcontactBanner__wrapper {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+.topcontactBanner__left small {
+  text-transform: uppercase;
+  color: #D9964A;
+  letter-spacing: 1rem;
+}
+.topcontactBanner__left h2 {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  line-height: 4rem;
+  margin: 2rem 0;
+}
+.topcontactBanner__left p {
+  margin-bottom: 2rem;
+}
+.topcontactBanner__left img {
+  width: 100%;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contactBanner {
+  padding: 15rem 0;
   position: relative;
 }
 .contactBanner__title {
@@ -1794,6 +1829,10 @@ img {
     grid-template-columns: 1fr;
     text-align: center;
   }
+}
+.contactBanner__title h2 {
+  font-family: "Playfair Display", serif;
+  padding-bottom: 2rem;
 }
 .contactBanner__wrapper {
   display: grid;
@@ -1814,10 +1853,12 @@ img {
   margin: 0.5rem 0 2rem;
   width: 100%;
   padding: 1rem;
-  background-color: #666666;
+  background-color: transparent;
+  border: 1px solid #000;
 }
 .contactBanner__left form textarea {
   height: 10rem;
+  border: 1px solid #000;
 }
 .contactBanner__left form input::-moz-placeholder, .contactBanner__left form textarea::-moz-placeholder {
   font-family: "Mulish", sans-serif;
@@ -1832,100 +1873,48 @@ img {
 .contactBanner__left form textarea:enabled {
   color: #dedbdb;
 }
+.contactBanner__left form button {
+  width: 10rem;
+}
 .contactBanner__left--name {
   display: flex;
   flex-direction: row;
   gap: 2rem;
 }
-@media screen and (max-width: 520px) {
-  .contactBanner__left--name {
-    grid-template-columns: 1fr;
-  }
-}
 .contactBanner__right {
-  padding: 4rem;
-  background-color: #dedbdb;
-  border: 1px solid #666666;
-  height: -moz-fit-content;
-  height: fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-@media screen and (max-width: 520px) {
-  .contactBanner__right {
-    width: 100%;
-    padding: 2rem;
-    margin: 0 auto;
-  }
-}
-.contactBanner__right::after {
-  position: absolute;
-  display: inline-block;
-  content: "";
-  background-color: #666666;
-  width: 34.5rem;
-  height: 90vh;
-  right: 1rem;
-  bottom: 1rem;
-  z-index: -9;
-}
-@media screen and (max-width: 520px) {
-  .contactBanner__right::after {
-    display: none;
-  }
-}
-
-.contactFaq {
-  padding: 4rem 0;
-}
-.contactFaq__wrapper {
   display: flex;
-  flex-direction: row;
-  gap: 5rem;
+  justify-content: center;
 }
-@media screen and (max-width: 520px) {
-  .contactFaq__wrapper {
-    flex-direction: column;
-  }
+.contactBanner__right .contact-card {
+  background-color: #d99a4a;
+  color: #fff;
+  padding: 3rem;
+  width: 100%;
+  max-width: 320px;
 }
-@media screen and (max-width: 520px) {
-  .contactFaq__left {
-    grid-template-columns: 1fr;
-    text-align: center;
-    max-width: 100%;
-  }
-}
-.contactFaq__left {
-  max-width: 30rem;
-}
-.contactFaq__left h2 {
+.contactBanner__right .contact-card h4 {
   margin-bottom: 2rem;
+  font-size: 1.5rem;
 }
-.contactFaq__item {
-  border-bottom: 1px solid #666666;
-  padding: 1.5rem;
+.contactBanner__right .contact-item {
+  margin-bottom: 1.8rem;
 }
-.contactFaq__item--question {
+.contactBanner__right .contact-item span {
+  display: block;
+  font-size: 0.85rem;
+  opacity: 0.8;
+  margin-bottom: 0.4rem;
+}
+.contactBanner__right .contact-item p {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
+  align-items: flex-start;
+  gap: 0.8rem;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
-.contactFaq__item--question i {
-  transition: 0.5s ease;
-}
-.contactFaq__item--answer {
-  max-height: 0;
-  overflow: hidden;
-  opacity: 1;
-  transition: 0.5s ease;
-  margin-top: 1rem;
-}
-.contactFaq__item.active i {
-  transform: rotate(180deg);
-}
-.contactFaq__item.active .contactFaq__item.active {
-  max-height: 1000px;
+.contactBanner__right .contact-item i {
+  margin-top: 0.2rem;
 }
 
 .tns-outer {
