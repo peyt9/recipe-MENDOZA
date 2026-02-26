@@ -29,28 +29,30 @@
     h2{
       margin: 2rem 0;
       font-family: $font-primary ;
-      line-height: ;
       font-size: 3.5rem;
     }
     .btn {
-      margin-top: 2rem;
+      margin-top: 1rem;
     }
   }
   &__right img{
-    border-radius: 10px;
+    border-radius: 12px;
   }
 }
 
 .recipe {
-  margin-top: 5rem;
+  margin-top: 6rem;
   &__title {
-    h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+
+    h3{
       color: $clr--primary;
       display: grid;
       grid-template-columns: 1fr auto 1fr;
       align-items: center;
       gap: 1rem;
-      margin-bottom: 3rem;
+      margin-bottom: 4rem;
     }
     h3::before,
     h3::after {
@@ -115,7 +117,7 @@
 }
 
 .weekly {
-  background-image: url("../../img/bell_pepper.jpeg");
+  background-image: url("./img/bell_pepper.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
