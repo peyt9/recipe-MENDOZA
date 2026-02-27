@@ -1482,6 +1482,8 @@ img {
 .footer {
   padding: 3rem 0;
   background-color: #F9E9D7;
+  margin-top: 20rem;
+  line-height: 5rem;
 }
 .footer__wrapper {
   display: flex;
@@ -1490,7 +1492,7 @@ img {
   text-align: center;
 }
 .footer h4 {
-  font-size: 5rem;
+  font-size: 3rem;
   margin-bottom: 2rem;
 }
 .footer__nav ul {
@@ -1542,7 +1544,7 @@ img {
 .homeBanner__left h2 {
   margin: 2rem 0;
   font-family: "Mulish", sans-serif;
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 .homeBanner__left .btn {
   margin-top: 1rem;
@@ -1799,6 +1801,7 @@ img {
   text-transform: uppercase;
   color: #D9964A;
   letter-spacing: 1rem;
+  margin-top: 2rem;
 }
 .contactBanner__left h2 {
   text-align: center;
@@ -1832,6 +1835,7 @@ img {
 }
 .contactBanner__title h2 {
   font-family: "Playfair Display", serif;
+  margin-top: 2rem;
   padding-bottom: 2rem;
 }
 .contactBanner__wrapper {
