@@ -1194,7 +1194,7 @@ p, a {
 }
 
 body {
-  color: #666666;
+  color: #D9964A;
   font-family: "Mulish", sans-serif;
   font-size: 1.6rem;
   overflow-x: hidden;
@@ -1480,8 +1480,8 @@ img {
 }
 
 .footer {
-  padding: 4rem 0;
-  color: #dedbdb;
+  padding: 3rem 0;
+  background-color: #F9E9D7;
 }
 .footer__wrapper {
   display: flex;
@@ -1490,7 +1490,7 @@ img {
   text-align: center;
 }
 .footer h4 {
-  font-size: 2.4rem;
+  font-size: 5rem;
   margin-bottom: 2rem;
 }
 .footer__nav ul {
@@ -1500,7 +1500,7 @@ img {
   margin-bottom: 2rem;
 }
 .footer a {
-  color: #dedbdb;
+  color: #666666;
   font-weight: 500;
   transition: 0.3s ease;
 }
@@ -1781,35 +1781,35 @@ img {
   margin-top: 0.5rem;
 }
 
-.topcontactBanner {
+.contactBanner {
   height: 700px;
   padding: 4rem 0;
 }
-.topcontactBanner__wrapper {
+.contactBanner__wrapper {
   margin: 0 auto;
   align-items: center;
 }
 @media screen and (max-width: 520px) {
-  .topcontactBanner__wrapper {
+  .contactBanner__wrapper {
     grid-template-columns: 1fr;
     text-align: center;
   }
 }
-.topcontactBanner__left small {
+.contactBanner__left small {
   text-transform: uppercase;
   color: #D9964A;
   letter-spacing: 1rem;
 }
-.topcontactBanner__left h2 {
+.contactBanner__left h2 {
   text-align: center;
   font-family: "Playfair Display", serif;
   line-height: 4rem;
   margin: 2rem 0;
 }
-.topcontactBanner__left p {
+.contactBanner__left p {
   margin-bottom: 2rem;
 }
-.topcontactBanner__left img {
+.contactBanner__left img {
   width: 100%;
   height: 600px;
   -o-object-fit: cover;
@@ -1915,26 +1915,4 @@ img {
 }
 .contactBanner__right .contact-item i {
   margin-top: 0.2rem;
-}
-
-.tns-outer {
-  overflow: hidden;
-  max-width: 90rem;
-  margin: 0 auto;
-}
-.tns-outer > button {
-  display: none;
-}
-.tns-nav {
-  text-align: center;
-}
-.tns-nav button {
-  width: 1rem;
-  height: 1rem;
-  margin: 2rem 0.5rem;
-  border: none;
-  border-radius: 50%;
-}
-.tns-nav-active {
-  background-color: #666666;
 }/*# sourceMappingURL=main.min.css.map */

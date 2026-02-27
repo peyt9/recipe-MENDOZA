@@ -4,7 +4,7 @@
 .homeBanner {
   background-color: $clr--secondary;
   padding: 6rem 0;
-  
+
   &__wrapper {
     @include gridCustom(1fr 1fr, 1rem);
     align-items: center;
@@ -26,16 +26,16 @@
       max-width: 45rem;
       margin-bottom: 2rem;
     }
-    h2{
+    h2 {
       margin: 2rem 0;
-      font-family: $font-primary ;
+      font-family: $font-primary;
       font-size: 3.5rem;
     }
     .btn {
       margin-top: 1rem;
     }
   }
-  &__right img{
+  &__right img {
     border-radius: 12px;
   }
 }
@@ -46,7 +46,7 @@
     text-align: center;
     margin-bottom: 4rem;
 
-    h3{
+    h3 {
       color: $clr--primary;
       display: grid;
       grid-template-columns: 1fr auto 1fr;
@@ -145,7 +145,7 @@
     }
 
     button {
-      background-color: $clr--primary; 
+      background-color: $clr--primary;
       color: $clr--light;
       border: none;
       padding: 0 2rem;
